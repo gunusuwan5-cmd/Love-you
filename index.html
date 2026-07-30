@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ถึงเธอคนพิเศษ ❤️</title>
+
+<style>
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+
+    color: white;
+
+    text-align: center;
+
+    overflow-x: hidden;
+
+}
+
+.container {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+
+}
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+h2 {
+
+    font-size: 30px;
+
+}
+
+p {
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+}
+
+button {
+
+    background: white;
+
+    color: #ff4f81;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.08);
+
+}
+
+.card {
+
+    background: rgba(255,255,255,0.2);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin: 40px 0;
+
+    backdrop-filter: blur(10px);
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.heart {
+
+    position: fixed;
+
+    bottom: -20px;
+
+    font-size: 25px;
+
+    animation: float 6s linear infinite;
+
+    opacity: 0.8;
+
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0) rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: translateY(-110vh) rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.gallery img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+.timeline {
+
+    text-align: left;
+
+}
+
+.timeline div {
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+
+}
+
+#secret {
+
+    font-size: 22px;
+
+    margin-top: 25px;
+
+}
+
+footer {
+
+    padding: 40px 10px;
+
+    font-size: 18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="hero">
+
+<h1>ถึงเธอคนพิเศษ ❤️</h1>
+
+<p>
+
+เว็บนี้เค้าตั้งใจทำให้เธอ<br>
+
+เพราะเธอคือคนสำคัญของเค้า
+
+</p>
+
+<button onclick="showLove()">
+
+กดตรงนี้สิ 💗
+
+</button>
+
+<div id="secret" class="hidden">
+
+เค้ารักเธอนะ ❤️<br>
+
+ขอบคุณที่เข้ามาเป็นความสุขในชีวิตของเค้า
+
+</div>
+
+</section>
+
+<div class="card">
+
+<h2>เรื่องราวของเรา 💕</h2>
+
+<div class="timeline">
+
+<div>
+
+<h3>วันที่เราได้เจอกัน 🌷</h3>
+
+<p>
+
+ตั้งแต่วันที่เราได้รู้จักกัน
+
+เค้าก็ไม่คิดเลยว่าวันหนึ่ง
+
+เธอจะกลายมาเป็นคนสำคัญของเค้าขนาดนี้
+
+</p>
+
+</div>
+
+<div>
+
+<h3>วันที่เราเริ่มสนิทกัน 💗</h3>
+
+<p>
+
+ทุกช่วงเวลาที่ได้คุยกัน
+
+ได้หัวเราะด้วยกัน
+
+มันกลายเป็นความทรงจำที่เค้าอยากเก็บไว้ตลอดไป
+
+</p>
+
+</div>
+
+<div>
+
+<h3>วันนี้ ❤️</h3>
+
+<p>
+
+ไม่ว่าจะมีวันที่ดีหรือวันที่ไม่ดี
+
+เค้าอยากอยู่ข้าง ๆ เธอ
+
+และอยากสร้างความทรงจำดี ๆ ไปด้วยกันอีกเยอะ ๆ
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>รูปของเรา 📸</h2>
+
+<p>
+
+ตรงนี้เอาไว้ใส่รูปคู่ของเรา
+
+เดี๋ยวเราจะมาใส่รูปจริงกันทีหลังนะ ❤️
+
+</p>
+
+<div class="gallery">
+
+<img src="https://placehold.co/600x600?text=Our+Photo+1">
+
+<img src="https://placehold.co/600x600?text=Our+Photo+2">
+
+<img src="https://placehold.co/600x600?text=Our+Photo+3">
+
+<img src="https://placehold.co/600x600?text=Our+Photo+4">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>ข้อความจากเค้าถึงเธอ 💌</h2>
+
+<p>
+
+ขอบคุณนะที่เข้ามาในชีวิตของเค้า<br>
+
+ขอบคุณสำหรับทุกช่วงเวลาที่เราได้อยู่ด้วยกัน<br>
+
+ขอบคุณสำหรับรอยยิ้มและความสุขที่เธอมอบให้เค้า
+
+</p>
+
+<p>
+
+เค้าอาจจะไม่ได้เป็นคนที่ดีที่สุด<br>
+
+แต่เค้าจะพยายามดูแลความรักของเราให้ดีที่สุดนะ
+
+</p>
+
+<p>
+
+ไม่ว่าจะผ่านไปนานแค่ไหน<br>
+
+เค้าก็ยังอยากมีเธออยู่ข้าง ๆ กันแบบนี้นะ ❤️
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>สุดท้ายนี้... 💗</h2>
+
+<p>
+
+ถ้าเธออ่านมาถึงตรงนี้
+
+เค้าอยากบอกว่า...
+
+</p>
+
+<h2>
+
+"เค้ารักเธอมากนะ" ❤️
+
+</h2>
+
+<button onclick="finalMessage()">
+
+กดดูข้อความสุดท้าย 💌
+
+</button>
+
+<p id="final" class="hidden">
+
+ขอบคุณที่เป็นความรักของเค้านะ<br>
+
+อยู่สร้างความทรงจำดี ๆ ด้วยกันไปนาน ๆ เลยนะ<br><br>
+
+รักเธอที่สุดเลย ❤️
+
+</p>
+
+</div>
+
+<footer>
+
+สร้างเว็บนี้ด้วยความรัก ❤️<br>
+
+สำหรับคนพิเศษของเค้า
+
+</footer>
+
+</div>
+
+<script>
+
+function showLove() {
+
+    document.getElementById("secret").classList.remove("hidden");
+
+}
+
+function finalMessage() {
+
+    document.getElementById("final").classList.remove("hidden");
+
+}
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+
+        (Math.random() * 3 + 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 6000);
+
+}
+
+setInterval(createHeart, 500);
+
+</script>
+
+</body>
+
+</html>
